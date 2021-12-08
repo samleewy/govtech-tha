@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.top-bar {
+    width: 100%;
+    box-shadow: 0px 4px 8px 4px rgba(224, 228, 229, 0.35);
+    align-items: center;
+}
+
+.top-bar-content {
+    width: 80%;
+    padding: 25px 0;
+}
+
+.search-results {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.search-results-content {
+    width: 80%;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+}
+
+.search-results-info {
+    color: #282828;
+    padding:20px 0;
+    font-size: 16px;
+    font-weight: 600;
+}

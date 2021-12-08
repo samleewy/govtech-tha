@@ -36,7 +36,7 @@ const SearchTextBox = ({ searchQuery, setSearchQuery, onSearchClick }) => {
         return highlightText(highlightIndices, suggestion)
     }
 
-    const shouldRenderSuggestions = (value, reason) => {
+    const shouldRenderSuggestions = (value) => {
         return value.trim().length > 2;
     }
 

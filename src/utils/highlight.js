@@ -2,7 +2,7 @@
 // wraps those text with class 'highlight'
 export const highlightText = (highlights, text) => {
     let prevOffset = 0;
-    if (highlights.length == 0) return text;
+    if (highlights.length === 0) return text;
     return <span>
         { highlights.map(highlight => {
             const elements = (

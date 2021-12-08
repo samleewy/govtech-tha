@@ -8,7 +8,7 @@ export const getResults = async () => {
         console.log(res.data)
         return res.data
     } catch (err) {
-        throw 'Unable to communicate with search results API! ' + err;
+        throw new Error('Unable to communicate with search results API! ' + err);
     }
 }
 
@@ -20,6 +20,6 @@ export const getSuggestionsApi = async (term) => {
         console.log(res.data)
         return res.data
     } catch (err) {
-        throw 'Unable to communicate with suggestions API! ' + err;
+        throw new Error('Unable to communicate with suggestions API! ' + err);
     }
 }

@@ -3,10 +3,10 @@ import './WOGHeader.css'
 
 const WOGHeader = () => {
     return (
-        <div class='header'>
-            <div class='header-content'>
+        <div className='header'>
+            <div className='header-content'>
                 <img src="./images/singapore-lion.png" />
-                <span>An Official Website of the <span class="strong">Singapore Government </span></span>
+                <span>An Official Website of the <span className="strong">Singapore Government </span></span>
             </div>
         </div>
     )

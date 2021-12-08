@@ -24,6 +24,7 @@
 .link {
     margin-top: 5px;
     font-size: 12px;
+    word-break: break-word;
 }
 
 .link a {

@@ -19,3 +19,14 @@ button {
 button:focus {
     outline: none;
 }
+
+@media only screen and (max-width: 600px) {
+    .search-btn-text {
+        display: none;
+    }
+
+    button {
+        width: 50px;
+        padding:11px 0px;
+    }
+}

@@ -3,6 +3,7 @@ input[type=text] {
     border: 1px solid #A4A4A4;
     border-radius: 8px;
     padding:12px;
+    width: 100%;
 }
 
 input[type=text]:hover {
@@ -12,4 +13,56 @@ input[type=text]:hover {
 input[type=text]:focus {
     outline:none;
     border:1px solid #1C76D5;
+}
+
+.react-autosuggest__container {
+    position: relative;
+}
+  
+.react-autosuggest__input:focus {
+    outline: none;
+}
+  
+.react-autosuggest__container--open .react-autosuggest__input {
+    border-bottom-left-radius: 8;
+    border-bottom-right-radius: 8;
+}
+  
+.react-autosuggest__suggestions-container {
+    display: none;
+}
+  
+.react-autosuggest__container--open .react-autosuggest__suggestions-container {
+    display: block;
+    position: absolute;
+    top: 41px;
+    width: calc(100% - 10px);
+    /*border: 1px solid #aaa;*/
+    background-color: #fff;
+    /*font-size: 16px;*/
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    z-index: 2;
+    box-shadow: 0px 4px 8px 4px rgba(224, 228, 229, 0.35);
+    font-size: 14px;
+}
+  
+.react-autosuggest__suggestions-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+  
+.react-autosuggest__suggestion {
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+.react-autosuggest__suggestion .highlight {
+    font-weight: 600;
+}
+  
+.react-autosuggest__suggestion--highlighted {
+    background-color: #1C76D5;
+    color: #fff;
 }

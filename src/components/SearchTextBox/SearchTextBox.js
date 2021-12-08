@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import Autosuggest from 'react-autosuggest'
 import { getSuggestionsApi } from '../../utils/data'
 import { getHighlightIndices, highlightText } from '../../utils/highlight'
@@ -7,6 +7,7 @@ import './SearchTextBox.css'
 const SearchTextBox = ({ searchQuery, setSearchQuery, onSearchClick }) => {
 
     const [suggestions, setSuggestions] = useState([])
+    const inputRef = useRef(null)
 
     const getSuggestionValue = suggestion => {
         console.log('get suggestion value', suggestion)
@@ -51,6 +52,7 @@ const SearchTextBox = ({ searchQuery, setSearchQuery, onSearchClick }) => {
     const onCancelClick = () => {
         setSearchQuery("")
         onSuggestionsClearRequested()
+        inputRef.current.focus()
     }
 
     return (
@@ -67,6 +69,7 @@ const SearchTextBox = ({ searchQuery, setSearchQuery, onSearchClick }) => {
                 value: searchQuery,
                 onChange: onTextChange,
                 onKeyDown: onKeyDown,
+                ref: inputRef,
             }} />
             { searchQuery && searchQuery.length >= 1 && 
             <i 

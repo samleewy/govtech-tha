@@ -1,10 +1,12 @@
 button {
+    width: 120px;
+
     background-color: #1C76D5;
     outline: none;
     color: white;
     font-weight: 600;
     border-radius: 8px;
-    padding: 10px 20px;
+    padding: 11px 20px;
 
     cursor:pointer;
 

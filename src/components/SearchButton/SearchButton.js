@@ -1,10 +1,12 @@
 import React from 'react'
 import './SearchButton.css'
 
-const SearchButton = () => {
+const SearchButton = ({ onSearchClick }) => {
+
     return (
-        <button>
-            <i class="fas fa-search"></i> Search
+        <button 
+            onClick={onSearchClick}>
+            <i className="fas fa-search"></i> Search
         </button>
     )
 }

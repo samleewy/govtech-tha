@@ -1,0 +1,15 @@
+input[type=text] {
+    color: #282828;
+    border: 1px solid #A4A4A4;
+    border-radius: 8px;
+    padding:12px;
+}
+
+input[type=text]:hover {
+    border:1px solid #1C76D5;
+}
+
+input[type=text]:focus {
+    outline:none;
+    border:1px solid #1C76D5;
+}

@@ -6,7 +6,8 @@ const SearchButton = ({ onSearchClick }) => {
     return (
         <button 
             onClick={onSearchClick}>
-            <i className="fas fa-search"></i> <span class="search-btn-text">Search</span>
+                <i className="fas fa-search"></i> 
+                <span className="search-btn-text">Search</span>
         </button>
     )
 }

@@ -1,0 +1,22 @@
+.title a {
+    color: #1C76D5;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.desc {
+    margin-top: 5px;
+    color: #424242;
+    font-size: 14px;
+}
+
+.desc .highlight {
+    color: #212121;
+    font-weight: 700;
+}
+
+.link {
+    margin-top: 5px;
+    color: #686868;
+    font-size: 12px;
+}

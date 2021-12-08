@@ -4,10 +4,16 @@
     text-decoration: none;
 }
 
+.title .highlight {
+    color: #005bba;
+    font-weight: 700;
+}
+
 .desc {
     margin-top: 5px;
     color: #424242;
     font-size: 14px;
+    font-weight: 400;
 }
 
 .desc .highlight {
@@ -17,6 +23,14 @@
 
 .link {
     margin-top: 5px;
-    color: #686868;
     font-size: 12px;
+}
+
+.link a {
+    color: #686868;
+    text-decoration: none;
+}
+
+.link a:hover {
+    text-decoration: underline;
 }

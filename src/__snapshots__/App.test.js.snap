@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`This suit is to test the App component should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="header"
+      >
+        <div
+          class="header-content"
+        >
+          <img
+            alt="WOG Logo"
+            src="./images/singapore-lion.png"
+          />
+          <span>
+            An Official Website of the 
+            <span
+              class="strong"
+            >
+              Singapore Government 
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="top-bar"
+      >
+        <div
+          class="top-bar-content"
+        >
+          <div
+            style="width: 100%; height: 0px;"
+          >
+            <div
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-owns="react-autowhatever-1"
+              class="react-autosuggest__container"
+              data-testid="search-textbox-suggest"
+              role="combobox"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-controls="react-autowhatever-1"
+                autocomplete="off"
+                class="react-autosuggest__input react-autosuggest__input--focused"
+                data-testid="search-textbox"
+                type="text"
+                value=""
+              />
+              <div
+                class="react-autosuggest__suggestions-container"
+                id="react-autowhatever-1"
+                role="listbox"
+              />
+            </div>
+          </div>
+          <div
+            style="position: relative; left: -10px;"
+          >
+            <button>
+              <i
+                class="fas fa-search"
+              />
+              <span
+                class="search-btn-text"
+              >
+                Search
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

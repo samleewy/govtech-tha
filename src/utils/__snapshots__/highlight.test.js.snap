@@ -3,14 +3,18 @@
 exports[`This suite is to test highlight functions should return correctly highlighted text with class 'highlight' 1`] = `
 <DocumentFragment>
   <span>
-    <div>
+    <div
+      style="display: inline;"
+    >
       <span
         class="highlight"
       >
         test
       </span>
     </div>
-    <div>
+    <div
+      style="display: inline;"
+    >
       <span>
          this would highlight everything related to 
       </span>
@@ -20,7 +24,9 @@ exports[`This suite is to test highlight functions should return correctly highl
         test
       </span>
     </div>
-    <div>
+    <div
+      style="display: inline;"
+    >
       <span>
         .... 
       </span>

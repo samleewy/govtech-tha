@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`This suit is to test SearchEntry component should render correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="title"
+    >
+      <a
+        href="www.testlink.com"
+      >
+        Test Title
+      </a>
+    </div>
+    <div
+      class="desc"
+    >
+      1 Sep 2021 — Test Description
+    </div>
+    <div
+      class="link"
+    >
+      <a
+        href="www.testlink.com"
+      >
+        www.testlink.com
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

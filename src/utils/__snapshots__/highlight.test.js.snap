@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`This suite is to test highlight functions should return correctly highlighted text with class 'highlight' 1`] = `
+<DocumentFragment>
+  <span>
+    <div>
+      <span
+        class="highlight"
+      >
+        test
+      </span>
+    </div>
+    <div>
+      <span>
+         this would highlight everything related to 
+      </span>
+      <span
+        class="highlight"
+      >
+        test
+      </span>
+    </div>
+    <div>
+      <span>
+        .... 
+      </span>
+      <span
+        class="highlight"
+      >
+        test
+      </span>
+    </div>
+    <span>
+      ?
+    </span>
+  </span>
+</DocumentFragment>
+`;

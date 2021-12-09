@@ -15,6 +15,14 @@ input[type=text]:focus {
     border:1px solid #1C76D5;
 }
 
+i.fas.fa-times {
+    cursor: pointer;
+    position: relative;
+    left: calc(100% - 2.2rem);
+    bottom: 1.95rem;
+    color: #686868;
+}
+
 .react-autosuggest__container {
     position: relative;
 }

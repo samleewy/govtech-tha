@@ -89,13 +89,6 @@ const SearchTextBox = ({ searchQuery, setSearchQuery, onSearchClick }) => {
             <i 
                 data-testid='search-cancel-btn'
                 className="fas fa-times"
-                style={{
-                    cursor: 'pointer',
-                    position: 'relative',
-                    left: 'calc(100% - 40px)',
-                    bottom: '30px',
-                    color: '#686868'
-                }}
                 onClick={onCancelClick}
             ></i>}
         </>

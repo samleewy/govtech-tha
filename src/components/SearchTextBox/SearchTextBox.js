@@ -21,8 +21,12 @@ const SearchTextBox = ({ searchQuery, setSearchQuery, onSearchClick }) => {
 
     const onSuggestionsFetchRequested = async ({ value }) => {
         // console.log('on suggestion fetch', value)
-        const data = await getSuggestionsApi(value);
-        setSuggestions(data.suggestions)
+        try {
+            const data = await getSuggestionsApi(value);
+            setSuggestions(data.suggestions)
+        } catch (err) {
+            console.log(err)
+        }
     }
 
     const onSuggestionsClearRequested = () => {

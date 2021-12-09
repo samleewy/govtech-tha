@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`This suit is to test SearchButton component should render correctly 1`] = `
+<DocumentFragment>
+  <button>
+    <i
+      class="fas fa-search"
+    />
+    <span
+      class="search-btn-text"
+    >
+      Search
+    </span>
+  </button>
+</DocumentFragment>
+`;

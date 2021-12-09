@@ -67,23 +67,23 @@ const SearchTextBox = ({ searchQuery, setSearchQuery, onSearchClick }) => {
     return (
         <>
             <Autosuggest 
-            suggestions={suggestions}
-            onSuggestionsFetchRequested={onSuggestionsFetchRequested}
-            onSuggestionsClearRequested={onSuggestionsClearRequested}
-            onSuggestionSelected={onSuggestionSelected}
-            getSuggestionValue={getSuggestionValue}
-            renderSuggestion={renderSuggestion}
-            shouldRenderSuggestions={shouldRenderSuggestions}
-            inputProps={{
-                value: searchQuery,
-                onChange: onTextChange,
-                onKeyDown: onKeyDown,
-                ref: inputRef,
-                'data-testid': 'search-textbox'
-            }} 
-            containerProps={{
-                'data-testid': 'search-textbox-suggest'
-            }}
+                suggestions={suggestions}
+                onSuggestionsFetchRequested={onSuggestionsFetchRequested}
+                onSuggestionsClearRequested={onSuggestionsClearRequested}
+                onSuggestionSelected={onSuggestionSelected}
+                getSuggestionValue={getSuggestionValue}
+                renderSuggestion={renderSuggestion}
+                shouldRenderSuggestions={shouldRenderSuggestions}
+                inputProps={{
+                    value: searchQuery,
+                    onChange: onTextChange,
+                    onKeyDown: onKeyDown,
+                    ref: inputRef,
+                    'data-testid': 'search-textbox'
+                }} 
+                containerProps={{
+                    'data-testid': 'search-textbox-suggest'
+                }}
             />
             { searchQuery && searchQuery.length >= 1 && 
             <i 

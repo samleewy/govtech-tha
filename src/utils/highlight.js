@@ -6,8 +6,8 @@ export const highlightText = (highlights, text) => {
     return <span>
         { highlights.map((highlight, idx) => {
             const elements = (
-                <div key={idx}>
-                    {highlight.BeginOffset != 0 && <span>{ text.slice(prevOffset, highlight.BeginOffset) }</span>}
+                <div key={idx} style={{ display: "inline" }}>
+                    {highlight.BeginOffset !== 0 && <span>{ text.slice(prevOffset, highlight.BeginOffset) }</span>}
                     <span className='highlight'>{ text.slice(highlight.BeginOffset, highlight.EndOffset) }</span>
                 </div>
             )

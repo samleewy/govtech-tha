@@ -11,7 +11,10 @@ yarn start
 ```
 
 ## Testing
-*Disclaimer: Tests were not as comprehensive due to unfamiliarity with React testing.*
+```
+yarn test
+Press <a> to run all test cases
+```
 
 ## Notes / Assumptions
 1. Since this assignment is based on a mock API, the utility functions that are used to grab search results / suggestions do not take into account what the user inputs. However, arguments are added into those functions if required in the future.

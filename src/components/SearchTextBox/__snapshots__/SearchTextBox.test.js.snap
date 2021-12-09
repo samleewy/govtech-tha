@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`This suit is to test SearchTextBox component should render correctly 1`] = `
+exports[`This suite is to test SearchTextBox component should render correctly 1`] = `
 <DocumentFragment>
   <div
     aria-expanded="false"

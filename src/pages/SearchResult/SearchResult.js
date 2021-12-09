@@ -27,12 +27,20 @@ const SearchResult = () => {
                             setError={setError} />
                 </div>
             </div>
-            {error && <div className='error-panel'>
-                Your search met with an accident, try again please :(
-            </div>}
-            {loading && !error && <div className='loading-panel'>
-                We are loading your search results, please wait! :D
-            </div>}
+            {error && 
+            <div className='error-panel'>
+                <div className='error-panel-content'>
+                    Your search met with an accident, try again please :(
+                </div>
+            </div>
+            }
+            {loading && !error && 
+            <div className='loading-panel'>
+                <div className='loading-panel-content'>
+                    We are loading your search results, please wait! :D
+                </div>
+            </div>
+            }
             { results && !loading && <div className='search-results'>
                 <div className='search-results-info'>
                     Showing {((results.Page - 1) * 10) + 1}

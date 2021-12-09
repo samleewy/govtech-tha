@@ -24,6 +24,11 @@
     margin-top: 20px;
 }
 
+.loading-panel-content, .error-panel-content {
+    width: 80%;
+    text-align: center;
+}
+
 .search-results {
     display: flex;
     flex-direction: column;

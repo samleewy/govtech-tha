@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Autosuggest from 'react-autosuggest'
 import { getSuggestionsApi } from '../../utils/data'
 import { getHighlightIndices, highlightText } from '../../utils/highlight'
@@ -9,19 +9,24 @@ const SearchTextBox = ({ searchQuery, setSearchQuery, onSearchClick }) => {
     const [suggestions, setSuggestions] = useState([])
     const inputRef = useRef(null)
 
+    useEffect(() => {
+        // provide initial focus onload
+        inputRef.current.focus();
+    }, []);
+
     const getSuggestionValue = suggestion => {
-        console.log('get suggestion value', suggestion)
+        // console.log('get suggestion value', suggestion)
         return suggestion
     }
 
     const onSuggestionsFetchRequested = async ({ value }) => {
-        console.log('on suggestion fetch', value)
+        // console.log('on suggestion fetch', value)
         const data = await getSuggestionsApi(value);
         setSuggestions(data.suggestions)
     }
 
     const onSuggestionsClearRequested = () => {
-        console.log('on suggestion clear')
+        // console.log('on suggestion clear')
         setSuggestions([]);
     }
 
@@ -41,7 +46,7 @@ const SearchTextBox = ({ searchQuery, setSearchQuery, onSearchClick }) => {
     }
 
     const onTextChange = (_, { newValue }) => {
-        console.log('onTextChange', newValue)
+        // console.log('onTextChange', newValue)
         setSearchQuery(newValue)
     }
 
@@ -70,10 +75,16 @@ const SearchTextBox = ({ searchQuery, setSearchQuery, onSearchClick }) => {
                 onChange: onTextChange,
                 onKeyDown: onKeyDown,
                 ref: inputRef,
-            }} />
+                'data-testid': 'search-textbox'
+            }} 
+            containerProps={{
+                'data-testid': 'search-textbox-suggest'
+            }}
+            />
             { searchQuery && searchQuery.length >= 1 && 
             <i 
-                class="fas fa-times"
+                data-testid='search-cancel-btn'
+                className="fas fa-times"
                 style={{
                     cursor: 'pointer',
                     position: 'relative',

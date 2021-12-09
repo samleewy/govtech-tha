@@ -4,12 +4,12 @@ export const highlightText = (highlights, text) => {
     let prevOffset = 0;
     if (highlights.length === 0) return text;
     return <span>
-        { highlights.map(highlight => {
+        { highlights.map((highlight, idx) => {
             const elements = (
-                <>
-                    <span>{ text.slice(prevOffset, highlight.BeginOffset) }</span>
-                    <span class='highlight'>{ text.slice(highlight.BeginOffset, highlight.EndOffset) }</span>
-                </>
+                <div key={idx}>
+                    {highlight.BeginOffset != 0 && <span>{ text.slice(prevOffset, highlight.BeginOffset) }</span>}
+                    <span className='highlight'>{ text.slice(highlight.BeginOffset, highlight.EndOffset) }</span>
+                </div>
             )
             prevOffset = highlight.EndOffset;
             return elements

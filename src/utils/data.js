@@ -5,7 +5,7 @@ export const getResults = async () => {
     try {
         // timeout set as 5 seconds to simulate network failure if required.
         const res = await axios.get(dataEndpoint, { timeout: 5000 })
-        console.log(res.data)
+        // console.log(res.data)
         return res.data
     } catch (err) {
         throw new Error('Unable to communicate with search results API! ' + err);
@@ -17,7 +17,7 @@ export const getSuggestionsApi = async (term) => {
     try {
         // timeout set as 5 seconds to simulate network failure if required.
         const res = await axios.get(suggestionsEndpoint, { timeout: 5000 })
-        console.log(res.data)
+        // console.log(res.data)
         return res.data
     } catch (err) {
         throw new Error('Unable to communicate with suggestions API! ' + err);

@@ -20,6 +20,10 @@ button:focus {
     outline: none;
 }
 
+i.fas.fa-search {
+    margin-right: 5px;
+}
+
 @media only screen and (max-width: 600px) {
     .search-btn-text {
         display: none;
@@ -28,5 +32,9 @@ button:focus {
     button {
         width: 50px;
         padding:11px 0px;
+    }
+
+    i.fas.fa-search { 
+        margin-right: 0;
     }
 }
